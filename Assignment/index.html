@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Assigment</title>
+
+    <style>
+        body{background-color: #050210;
+
+        }
+
+        #evan{
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+            margin:15% 40% auto;
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            animation:first 1s linear infinite forwards;
+            
+        }
+        #evan::before{
+            background: linear-gradient(#fb5dad,#55fb9f,#b97aff);
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            filter : blur(20px);
+            content: "";
+            border-radius: 100%;
+           
+
+        }
+        #first-div{
+            width: 350px;
+            height: 350px;
+            background: #050210;
+            border-radius: 100%;
+            position: absolute;
+            left: 765px;
+            bottom: 310px;
+            
+        }
+        #second-div{
+            background:gray;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            position: absolute;
+            left: 170px;
+            bottom: 175px;
+            filter: opacity(4%);
+            animation: second 1s linear infinite forwards;
+
+        }
+    
+
+        @keyframes first {
+
+            from{
+                transform:rotate(0deg)
+        
+
+            }
+            to{
+                transform: rotate(360deg);
+
+            }
+            }
+
+            @keyframes second {
+                from{
+                    transform: scale3d(0.01,0.01,0.01)
+                    
+
+                }
+                to{
+                    transform: scale3d(34,34,34)
+
+
+                }
+
+
+            }
+    
+    </style>
+
+
+</head>
+
+
+<body> 
+
+     <div id="evan">
+       
+
+     </div>
+     <div id="first-div">
+            
+        <div id="second-div"></div>
+
+     </div>
+
+
+</body>
+
+</html>
