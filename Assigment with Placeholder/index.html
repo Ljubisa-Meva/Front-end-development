@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Advanced CSS - Assignment 1</title>
+    
+    <style>
+        body{
+            align-self: center;
+            position: relative;
+            left: 25%;
+        }
+        #galery{
+            width: 46%;
+            height: 44%;
+            display: grid;
+            grid-auto-flow: column;
+            column-gap: 20px;
+            row-gap: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "a b c d e"
+                                 "f g h i j";
+    
+        }
+
+    
+        @media screen and (max-width: 768px) {
+            #galery{
+                grid-template-columns: repeat(3,minmax(120px,auto));
+                grid-template-rows: repeat(4,minmax(120px,auto));
+                grid-template-areas: "a b c"
+                                     "d e f"
+                                     "g h i"
+                                     "j . .";
+                
+                
+            }
+        }
+        @media screen  and (max-width: 414px){
+            #galery{
+                grid-template-columns: repeat(1,minmax(120px,auto));
+                grid-template-rows: repeat(10,minmax(120px,auto));
+                grid-template-areas: "a"
+                                     "b"
+                                     "c"
+                                     "d"
+                                     "e"
+                                     "f"
+                                     "g"
+                                     "h"
+                                     "i"
+                                     "j";
+                                     
+            }
+    
+        }
+        #box1{
+
+            width: 89%;
+            height: 5.98em;
+            background-image: url(placeholder-image.png);
+            background-color: rgba(47, 47, 235, 0.925);
+            background-repeat: round;
+            background-size: cover;
+            border-radius: 10px 10px 4px 0px;
+            grid-area: a;
+            
+        }
+        #box2{
+
+             width: 89%;
+             height: 5.98em;
+             background-image: url(placeholder-image.png);
+             background-color: rgba(47, 47, 235, 0.925);
+             background-repeat: round;
+             background-size: cover;
+             border-radius: 10px 10px 4px 0px;
+             grid-area: b;
+
+             }
+        #box3{
+
+            width: 89%;
+            height: 5.98em;
+            background-image: url(placeholder-image.png);
+            background-color: rgba(47, 47, 235, 0.925);
+            background-repeat: round;
+            background-size: cover;
+            border-radius: 10px 10px 4px 0px;
+            grid-area: c;
+
+            }
+        #box4{
+
+            width: 89%;
+            height: 5.98em;
+            background-image: url(placeholder-image.png);
+            background-color: rgba(47, 47, 235, 0.925);
+            background-repeat: round;
+            background-size: cover;
+            border-radius: 10px 10px 4px 0px;
+            grid-area: d;
+
+            }
+        #box5{
+
+           width: 89%;
+           height: 5.98em;
+           background-image: url(placeholder-image.png);
+           background-color: rgba(47, 47, 235, 0.925);
+           background-repeat: round;
+           background-size: cover;
+           border-radius: 10px 10px 4px 0px;
+           grid-area: e;
+
+           }
+        #box6{
+
+          width: 89%;
+          height: 5.98em;
+          background-image: url(placeholder-image.png);
+          background-color: rgba(47, 47, 235, 0.925);
+          background-repeat: round;
+          background-size: cover;
+          border-radius: 10px 10px 4px 0px;
+          grid-area: f;
+
+          }
+        #box7{
+
+          width: 89%;
+          height: 5.98em;
+          background-image: url(placeholder-image.png);
+          background-color: rgba(47, 47, 235, 0.925);
+          background-repeat: round;
+          background-size: cover;
+          border-radius: 10px 10px 4px 0px;
+          grid-area: g;
+
+          }
+ 
+
+        #box8{
+
+          width: 89%;
+          height: 5.98em;
+          background-image: url(placeholder-image.png);
+          background-color: rgba(47, 47, 235, 0.925);
+          background-repeat: round;
+          background-size: cover;
+          border-radius: 10px 10px 4px 0px;
+          grid-area: h;
+
+          }
+        #box9{
+
+          width: 89%;
+          height: 5.98em;
+          background-image: url(placeholder-image.png);
+          background-color: rgba(47, 47, 235, 0.925);
+          background-repeat: round;
+          background-size: cover;
+          border-radius: 10px 10px 4px 0px;
+          grid-area: i;
+
+          }
+          #box10{
+
+          width: 89%;
+          height: 5.98em;
+          background-image: url(placeholder-image.png);
+          background-color: rgba(47, 47, 235, 0.925);
+          background-repeat: round;
+          background-size: cover;
+          border-radius: 10px 10px 4px 0px;
+          grid-area: j;
+
+          }
+
+        .box{
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.589);
+            box-sizing: border-box;
+            background-color: rgb(243, 239, 239);
+            color: black;
+            border-radius: 0px 0px 10px 10px;
+            top: 98%;
+            text-align: center;
+        }
+
+        p{
+            width: 46% ;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1>Gallery Heading</h1> 
+<div id="galery">
+<div id="box1">
+<div class="box">Image Title</div>
+</div>
+<div id="box2">
+     <div class="box">Image Title</div>
+</div>
+<div id="box3">
+     <div class="box">Image Title</div>
+</div>
+<div id="box4">
+     <div class="box">Image Title</div>
+</div>
+<div id="box5">
+     <div class="box">Image Title</div>
+</div>
+<div id="box6"> 
+    <div class="box">Image Title</div>
+</div>
+<div id="box7">
+     <div class="box">Image Title</div>
+</div>
+<div id="box8">
+     <div class="box">Image Title</div>
+</div>
+<div id="box9">
+     <div class="box">Image Title</div>
+</div>
+<div id="box10">
+     <div class="box">Image Title</div>
+</div>
+</div>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae modi totam rerum.<br> Similique sequi exercitationem est distinctio amet quae, tenetur illum atque corrupti magnam recusandae fugit pariatur ab adipisci vel!
+<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, maxime eaque dolorum dignissimos numquam facilis explicabo delectus impedit.<br> Maxime aliquid dolor eius voluptate quo aspernatur temporibus nobis quam nisi nemo.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Sed quibusdam perspiciatis reiciendis laborum exercitationem corporis suscipit at expedita enim. Ducimus libero, nulla eius autem perspiciatis a veniam voluptatem itaque eum!<br>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam unde at distinctio aut excepturi, dolorem ea natus eaque<br> repellendus libero aliquam voluptas, deserunt totam dolore voluptatum corrupti inventore, tenetur amet!
+Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Vero, sed inventore, illum itaque omnis eos maxime vel praesentium quia quasi laboriosam placeat obcaecati numquam dignissimos natus corporis. Sint, dicta fugit.
+</p>
+</body>
+
+</html>
