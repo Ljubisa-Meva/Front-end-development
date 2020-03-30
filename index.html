@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Assigment</title>
-
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Assigment 2</title>
 
 </head>
 
 <body>
 
-   <script>
-            var r2=prompt("Molim vrednost poluprecnika valjka");
-            var H=prompt("Molim unesite visinu valjka");
-            var Pi=3.14
+    <script>
 
-            var V=parseInt(r2)*Pi*parseInt(H);
+         var A =prompt("Molim unesite broj A")
+         var numerB =prompt("Molim unesite za sabiranje (+) za oduzimanje (-) za mnozenje (*) za delenje (/)")
+         var C =prompt("Molim unesite broj B")
 
-            alert("V je:" +V);
+         if (numerB==="+") {
+             var sum=parseInt(A)+parseInt(C);
 
-   </script>
+             prompt("Rezultat je:" + sum)
+             
+         }else if (numerB==="-") {
+             var sum=A-C;
+
+             prompt("Rezultat je:"+ sum)
+         }else if (numerB==="*") {
+            var sum=A*C;
+
+             prompt("Rezultat je:"+ sum)
+         }else if (numerB==="/") {
+            var sum=A/C;
+
+             prompt("Rezultat je:"+ sum)
+         }
+
+
+    </script>
 
 
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
